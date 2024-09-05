@@ -1,0 +1,23 @@
+[package]
+name = "ace"
+version = "0.1.0"
+authors = ["Jake Gemerek <jake.gemerek@gmail.com>"]
+edition = "2021"
+description = "ACE: Applied Controls and Estimation Library"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+ndarray = "0.15"
+ndarray-linalg = { version = "0.15", features = ["openblas"] }
+
+# [dev-dependencies]
+rand = "*"
+plotters = "*"
+
+[[bin]]
+name = "test_kalman_filter"
+path = "src/main.rs"
+
+# [build-dependencies]
+# cc = "1.0"
